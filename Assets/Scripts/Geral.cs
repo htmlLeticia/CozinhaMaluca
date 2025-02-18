@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Geral : MonoBehaviour
@@ -53,5 +54,10 @@ public class Geral : MonoBehaviour
         //zera o placar do jogador
         placarJogadorNum = 0;
         AtualizarTextoPlacar();
+    }
+
+    public void CarregarCena(string nomeDaCena)
+    {
+        SceneManager.LoadScene(nomeDaCena);
     }
 }
